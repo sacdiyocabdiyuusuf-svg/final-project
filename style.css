@@ -1,0 +1,967 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+      font-family: "Poppins", sans-serif;
+      background-color: #fff;
+      overflow-x: hidden;
+
+}
+header{
+    height: 6rem;                                           
+    background-color:rgba(137, 134, 134, 0.1);
+    width: 100%;
+    position:fixed;
+    left: 0;
+    top: 0;
+    z-index:10;
+    
+}
+    /* container guud */
+.container{
+        width: min(90%, 1120px);
+         margin-inline: auto;
+         
+
+
+}
+        /* disk-top-menu */
+.disktop-menu{
+     height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-links{
+    
+    display: flex;
+    gap: 1.5rem;
+}
+.menu-links li{
+    padding: 10px;
+    list-style: none;
+}
+
+.disktop-menu li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size:1rem;
+    color:#000;
+    text-transform: uppercase;
+   
+
+}
+.menu-links li a:hover{
+    color: #ee664e;
+    cursor: pointer;
+
+}
+.b-t-n{
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    border: none;
+    padding: 1rem 1.8rem;
+     background-color: #ee664e;
+     color:#fff ;
+     text-transform: uppercase;
+     transition: 0.3s;
+     cursor: pointer;
+    
+}
+.logo-t,.logo-s{
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing:0.0625rem ;
+    text-transform: uppercase;
+    color:#000;
+}
+.logo-s{
+    color: #ee664e;
+}
+.video-section{
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 20px;
+
+
+
+    
+}
+        /* video-section */
+.video-section{
+    position: relative;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+.overlay
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100% ;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+.contant{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+        
+.contant h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.contant h1{
+    font-size: 6rem;
+    font-weight: 800;
+     text-transform: uppercase;
+    letter-spacing: 0.2rem;
+
+
+
+}
+.contant h1 span{
+    color: #ee664e;
+}
+.contant .b-t-n{
+    margin-top: 4rem;
+    background: #ee664e;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+    /* classes-section */
+
+.classes{
+    margin-block:9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2rem;
+    letter-spacing: 0.1rem;
+}
+.classes h1{
+    font-size:2rem ;
+    color: black;
+    font-weight: 800;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-style:BLOLD;
+}
+.classes h1 span{
+    color: #ee664e;
+}
+.classes img {
+    width: 45px;
+    height: 15px;
+}
+.classes p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #939090;
+    font-style: bold;
+}
+    /* courses-section */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+    margin-inline: 4rem;
+    margin-block: 6rem;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2rem;
+    
+}
+.blog h4{
+    font-size: 2rem;
+    font-weight:400;
+    
+
+
+}
+.blog p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #939090;
+
+}
+.blog-img img{
+    width:100px;
+    height: 100px;
+}
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+.blog-content span{
+color:#007bff;
+}
+.more {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1rem;
+    margin-top: 0.2rem;
+    color:#ee664e;
+}
+        /* hero-section */
+.hero-section{
+    background:linear-gradient(rgba(60, 59, 59, 0.4),rgba(53, 51, 51, 0.4)),url(https://images.unsplash.com/photo-1637430308606-86576d8fef3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z3ltJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D) center/cover no-repeat;
+    width: 100%;
+    height: 80vh;
+}
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 10rem;
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+.hero-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1rem;
+}
+.hero-content h1 span{
+    color: #ee664e;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+}   
+        /* classes-section */
+.our-classes{
+    margin-block:6rem;
+    margin-inline: 6rem;
+}
+.classe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
+    /* width: 100%; */
+}
+.classe h1{
+    font-size: 3rem;
+    font-weight: 600;
+    align-items: 1rem;
+    color: #000;
+    text-transform: uppercase;
+}
+.classe h1 span{
+    color: #ee664e;
+}
+.classes-img img{
+width: 45px;
+height: 15px;
+}
+.classe p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #939090;
+        
+}
+        /* training and courses */
+.avalible-courses{
+    margin-top: 4rem;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    gap: 4rem;
+}
+        /* training */
+.training{
+    display: grid;
+    grid-template-rows:100px 100px 100px 100px;
+    gap:3rem;
+    
+}
+.training-blog{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color:#fbf8f8;
+    box-shadow: 2px 2px 4px  rgba(0,0, 0, 0.1);
+}
+.training-blog img{
+    width: 35px;
+    height: 35px;
+     margin-left: 3rem;
+}
+.t-button{
+    padding: 30px 30px;
+    background-color: #ee664e;
+    color:#fbf8f8;
+    border:none ;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+
+    
+}
+
+
+        /* courses */
+
+.courses-content{
+    display: grid;
+    gap: 1.5rem;
+
+}
+.t-content{
+    display: grid;
+    gap: 1.5rem;
+}
+.courses-img{
+    width: 100%;
+    height: 100%;
+}
+.courses-content img{
+    max-width: 900px;
+    width: 100%;
+    height:297;
+    border-radius:8px;
+}
+.t-content h2{
+font-size: 2rem;
+color:#111010;
+font-weight: 500;
+line-height: 1rem;
+}
+.t-content p {
+    font-weight: 1.2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #939090;
+}
+.c-b-t-n{
+    padding: 20px 30px;
+    color: #fff;
+    background-color: #ee664e;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+        /* schedule-section */
+.schedule-section{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://images.unsplash.com/photo-1776710669793-fcd8568a911d?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)center/cover no-repeat;
+    width: 100%;
+    height: 100%;
+}
+        /* schedule-section jadwalka gym ka */
+
+.schedule-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fbf8f8;
+    gap:2rem;
+    background-color: #22252A;
+    
+}
+.schudle-gym{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.schudle-gym h2{
+    font-size: 2rem;
+    font-weight: 500;
+
+}
+.schudle-gym h2 span{
+    color: #ee664e;
+}
+.schedule
+.schudle-gym  img{
+    width: 45px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6rem;
+}
+.schudle-gym p{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        gap: 10px;
+}
+.days span:hover{
+color: #ee664e;
+cursor: pointer;
+
+}
+.dily-schudle{
+    width: 100%;
+    height: 100%;
+}
+.dily-schudle table{
+    margin-top: 3rem;
+    width: 70%;
+    height: 10vh;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    margin-inline: auto;
+    margin-bottom: 20px;
+}
+.dily-schudle table td{
+    border: 1px solid rgb(79, 76, 76);
+    padding: 25px 25px;
+    
+
+}
+.dily-schudle table td .t-td{
+    font-weight: bold;
+}
+        /* expert-section */
+.expert-section{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expert-section h1{
+font-size: 2.2rem;
+font-weight: 500;
+}
+.expert-section h1 span{
+color: #ee664e;
+}
+.x-section img {
+width: 45px;
+height: 15px;
+}
+.expert-section p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height:2rem;
+    color:#939090;
+}
+    /* /* blogs-section * *
+    /* Qaybta Guud ee Blogs-ka */
+.blogs-section {
+    width: 100%;
+}
+
+.s-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+/* Kartoonkakiiba (Card) */
+.s-blog {
+    height: auto; /* Ka ilaalinaya inuu qoraalku ka soo baxo ama isku dhex yaaco */
+    background-color: #ffffff; /* Midabka caddaanka ah ee aad rabtay */
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08); /* Hoos-u-dhaca quruxda badan ee card-ka */
+    padding: 20px; /* Meel bannaan oo ku wareegsan gudaha */
+}
+
+.m-blog {
+    height: 100%;
+    width: 100%;
+}
+
+.m-blog em {
+    color: #ee664e;
+    font-weight: 400;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+}
+    /* last-section */
+
+.l-section{
+    max-width: 100%;
+    height:100%;
+}
+.map{
+    width: 100%;
+    height: 100%;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    border: 0;
+    object-fit: cover;
+}
+
+.contact-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.modal{
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+      background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(https://plus.unsplash.com/premium_photo-1661383825798-03db9a0151f2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)center/cover no-repeat;
+
+}
+.modal-content{
+    margin-top: 5rem;
+    background-color: #fbf8f8;
+    width: 60%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.modal-content form {
+    /* margin-left:1rem; */
+    
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.from .i-div{
+
+ display: flex;
+ gap:1rem ;
+ 
+}
+.from .i-div input{
+    padding: 5px 0;
+    
+}
+#subject{
+    padding: 13px 5px;
+}
+#massage{
+    padding: 40px 5px;
+}
+.f-b-t-n{
+    padding: 20px 50px;
+    background-color: #ee664e;
+    border: none;
+    color: #fbf8f8;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.from ::placeholder{
+    color:#939090;
+    font-size: 1.3rem;
+}
+    /* footer */
+.footer{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+            /* humburger */
+.humburger{
+    display: none;
+}
+.hard{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+i{
+    z-index: 11111;
+}
+        /* media query */
+        @media (min-width:781px){
+             header{
+                background-color: rgba(247, 241, 241, 0.1);
+             }
+
+        }
+
+@media (max-width:780px){
+    
+    .mobile-menu {
+        position: fixed !important;
+        top: 60px !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: calc(100vh - 40px) !important;
+        background-color: #ffffff !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.1) !important;
+        z-index: 99999 !important;
+        overflow-y: auto !important;
+    }
+
+    .mobile-menu .menu-links {
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .mobile-menu .menu-links li {
+        list-style: none !important;
+        border-bottom: 1px solid #eee !important;
+        text-align: center !important;
+        width: 100% !important;
+        padding: 10px 0 !important;
+    }
+
+    .mobile-menu .menu-links li a {
+        color: #212529 !important;
+        text-decoration: none !important;
+        font-weight: 400 !important;
+        display: block !important;
+        width: 100% !important;
+    }
+
+    /* Hubinta in badhanka uu si cad uga muuqdo xagga hoose */
+    .mobile-menu .b-t-n.last,
+    .mobile-menu button {
+        width: 100% !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 10px 0 !important;
+        border: none !important;
+        background-color: #ed563b !important;
+        color: #fff !important;
+        text-align: center !important;
+        text-transform: uppercase !important;
+        font-weight: 400 !important;
+        cursor: pointer !important;
+    }
+
+    .disktop-menu{
+        display: none;
+    }
+
+    header{
+        /* height: 0; */ /* Iska tirtir ama ka dhig auto */
+        position: relative;
+        background-color: transparent;
+    }
+    .humburger{
+        display: flex;
+        position: absolute;
+        top: 15%; /* Waxaad isticmaashaa pixels ama boqolkiiba ka weyn sida 20% */
+        right: 0%;
+        width: 50px;
+        height: 50px;
+        background-color:transparent;
+
+    }
+
+   
+    
+     .humburger i:hover{
+        color: #000;
+     }
+    .hard{
+        display: flex;
+        align-items: center;
+        margin-inline: 10px;
+    }
+
+
+
+
+/* Marka uu xiran yahay (false) */
+.mobile-menu[data-visible="false"] {
+    transform: translateX(100%);
+    display: none; /* Haddii aad rabto in la qariyo gebi ahaanba */
+}
+
+/* Marka uu furan yahay (true) */
+.mobile-menu[data-visible="true"] {
+    transform: translateX(0);
+    display: flex;
+}
+
+/* Kala badalka Icons-ka Hamburger iyo Close */
+.humburger i[data-visible="false"] {
+    display: none;
+}
+
+.humburger i[data-visible="true"] {
+    display: block;
+}
+
+    .video-section {
+        width: 100% !important;
+        height: 100vh !important;
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    #bg-video {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        min-width: 100% !important;
+        min-height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .video-section .contant {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        width: 90% !important;
+        text-align: center !important;
+        z-index: 2 !important;
+    }
+
+    .video-section .contant h1 {
+        font-size: 28px !important;
+    }
+
+    .video-section .contant h6 {
+        font-size: 14px !important;
+    }
+        .content-section {
+        padding: 50px 20px !important;
+        text-align: center !important;
+    }
+
+    .content-section .classes h1 {
+        font-size: 26px !important;
+    }
+
+    .content-section .classes p {
+        font-size: 14px !important;
+        padding: 0 10px !important;
+        line-height: 1.5 !important;
+    }
+
+    .content-section .classes img {
+        max-width: 50% !important;
+        height: auto !important;
+    }
+
+        /* qazybta blogs one */
+
+    .blogs{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .blog-content h4 {
+        font-size: 16px;
+    }
+    .blog-content p{
+        font-size: 11px;
+    }
+    .blog-content me {
+        font-size: 16px;
+    }
+                /* qaybta-heroga */
+
+    
+  .hero-section {
+    overflow-x: hidden;
+  }
+  .hero-content {
+    margin-top: 2rem;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 18px;
+  }
+  .hero-content p{
+    font-size: 16px;
+    line-height: 22px;
+  }
+                /* qaybta clases ka  */
+    
+    .classe{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+       
+    }
+    .classe h1 {
+        font-size: 16px;
+    }
+    .classe p {
+        font-size: 11px;
+        width: 300px;
+        line-height: 11px;
+
+    }
+
+    .avalible-courses{
+    
+        display: flex;
+        flex-direction: column;
+    }
+    .training{
+        width: 100%;
+    }
+    .training-blog {
+        width: 100%;
+    }
+    .courses{
+        max-width: 100%;
+    }
+    .courses-content{
+        display: flex;
+        flex-direction: column;
+    justify-content: center;
+        max-width: 100%;
+    }
+    .courses-content img{
+        width: 100%;
+    }
+    .t-content h2{
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .t-content p{
+        font-size: 11px;
+        line-height: 16px;
+    }
+    
+
+            /* qaybta-jadwalka */
+
+    .schudle-gym h2 {
+      font-size: 16px;  
+    }
+    .schudle-gym p {
+        font-size: 11px;
+        line-height: 22px;
+    }
+    .dily-schudle{
+        font-size: 12px;
+    }
+    .table  tr {
+        padding: 10px 5px;
+        font-size: 5px;
+    }
+    .expert-section h1 {
+        font-size: 16px;
+    }
+     .expert-section p{
+        font-size: 12px;
+        line-height: 22px;
+        width: 300px;
+     }
+                /* qeybta-section */
+
+    
+
+    
+
+       
+.s-blogs{
+   grid-template-columns: 1fr; 
+}
+
+            /* last-section */
+
+
+     .contact-section{
+        grid-template-columns: 1fr;
+     }   
+     .modal-content{
+        width: 100%;
+     }  
+     .from .i-div input{
+        padding: 5px 5px;
+     }
+
+     .f-b-t-n{
+        padding: 12px 15px;
+        margin-bottom: 16px;
+     }
+  }
+        
+
+
+
+  
+
+
+
+
+
+
+
+
+    
+
+
+
